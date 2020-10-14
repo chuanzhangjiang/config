@@ -145,3 +145,10 @@ if [ "$result2" -eq 0 ] && [ "$result1" -eq 1 ]
 then
     eval "neofetch"
 fi
+
+# 环境变量
+# play项目所需环境变量
+export APPLICATION_SECRET='QCY?tAnfk?aZ?iwrNwnxIlR6CTf:G3gf:90Latabg@5241AB`R5W:1uDFN];Ik@n'
+
+export MYSQL_USER='root'
+export MYSQL_PSD='12345678'
