@@ -128,6 +128,10 @@ alias r='ranger'
 
 alias file-util='nautilus &'
 
+alias disk-use='df -h | grep -E "(\s/$|home)"'
+
+alias temperature='sensors'
+
 # 修改默认文本编辑器
 VISUAL='emacs -nw'
 
@@ -139,9 +143,9 @@ export EDITOR
 # export PATH="$PATH:/home/chuanzhangjiang/ScalaHome/scala/bin"
 
 # neofetch显示逻辑
-result1=$(ps ax|grep -v grep|grep '\sst$'|wc -l)
-result2=$(ps ax|grep -v grep|grep 'ranger'|wc -l)
-if [ "$result2" -eq 0 ] && [ "$result1" -eq 1 ] 
+ST_NUM=$(ps ax|grep -v grep|grep '\sst$'|wc -l)
+RANGER_NUM=$(ps ax|grep -v grep|grep 'ranger'|wc -l)
+if [ "$RANGER_NUM" -eq 0 ] && [ "$ST_NUM" -eq 1 ] 
 then
     eval "neofetch"
 fi
