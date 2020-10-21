@@ -132,6 +132,8 @@ alias disk-use='df -h | grep -E "(\s/$|home)"'
 
 alias temperature='sensors'
 
+alias show-getway='route -n'
+
 # 修改默认文本编辑器
 VISUAL='emacs -nw'
 
