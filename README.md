@@ -14,3 +14,4 @@ ln -s {源文件目录} {目标目录}
 | .bashrc          | ~/.bashrc          |
 | .emacs           | ~/.emacs           |
 | .xsession        | ~/.xsession        |
+| .zshrc           | ~/.zshrc           |
