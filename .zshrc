@@ -141,3 +141,6 @@ export MYSQL_USER='root'
 export MYSQL_PSD='12345678'
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+# sbt强制所有项目使用配置好的仓库
+export SBT_OPTS="-Dsbt.override.build.repos=true"
